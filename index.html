@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title>Reservia - Page d'accueil</title>
-        <link ref="stylesheet" href="stylesheet/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://kit.fontawesome.com/86f823ab3f.js" crossorigin="anonymous"></script>
     </head>
 
     <header>
@@ -26,14 +27,12 @@
 
             <div id="search_toolbar">
                 <div id="search_tb_icon">
-                    <a href="#"><img src="" alt="" /></a>
+                    <i class="fas fa-map-marker-alt"></i>
                 </div> 
                 
-                <div id="search_tb_input">
-                    <form method="post" action="traitement.php">
-                        <p><input type="text" name="Marseille, France" /></p>
-                    </form>
-                </div>
+                <form id="search_tb_input" method="post" action="traitement.php">
+                    <input type="text" name="Marseille, France" />
+                </form>
 
                 <div id="search_tb_button">
                     <p>Rechercher</p>
