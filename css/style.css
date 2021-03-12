@@ -135,22 +135,6 @@ nav ul
     top: 15px;
 }
 
-.fa-info:before
-{
-    font-size: 15px;
-    position: relative;
-    color: var(--main_blue)
-}
-
-.fa-circle:before
-{
-    font-size: 30px;
-    position: relative;
-    left: -18px;
-    top: 5px;
-    color: var(--gray)
-}
-
 input
 {
     width: 100%;
@@ -191,6 +175,23 @@ input:focus, textarea:focus, select:focus
     text-align: center;
 }
 
+.fa-info:before
+{
+    font-size: 15px;
+    position: relative;
+    left: 10px;
+    color: var(--main_blue)
+}
+
+.circle_empty:before
+{
+    font-size: 30px;
+    position: relative;
+    left: -8px;
+    top: 5px;
+    color: var(--gray)
+}
+
 #search_filters
 {
     display: flex;
@@ -217,21 +218,72 @@ width: 5%
     border: var(--gray) solid;
     border-left: none;
     border-radius: 0px 40px 40px 0px;
-    padding-bottom: 10px;
     padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
 }
 
 #search_filters a
 {
     width: auto;
+    padding-left: 20px;
     font-weight: bold;
     color: black;
     font-size: 20px;
     white-space: nowrap;
-}   
+}  
+
+.circle_full:before
+{
+    color: var(--light_blue);
+    font-size: 50px;
+    position: relative;
+    left: 30px;
+    z-index: 1;
+}
+
+.fa-money-bill-wave
+{
+    color: var(--main_blue);
+    position: relative;
+    left: 67px;
+    top: 15px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.fa-child
+{
+    color: var(--main_blue);
+    position: relative;
+    left: 64px;
+    top: 13px;
+    font-size: 25px;
+    z-index: 2; 
+}
+
+.fa-heart
+{
+    color: var(--main_blue);
+    position: relative;
+    left: 67px;
+    top: 14px;
+    font-size: 25px;
+    z-index: 2;   
+}
+
+.fa-dog
+{
+    color: var(--main_blue);
+    position: relative;
+    left: 69px;
+    top: 11px;
+    font-size: 25px;
+    z-index: 2; 
+} 
 
 
-            /* ACTIVITIES */
+            /* HOSTINGS */
 
 #hostings
 {
@@ -283,6 +335,22 @@ width: 5%
     color: black;
 }
 
+figcaption p, figcaption h2
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.blue_stars
+{
+    color: var(--main_blue);
+}
+
+.gray_stars
+{
+   color: var(--gray) 
+}
+
 aside
 {
     margin-left: 3%;
@@ -290,8 +358,53 @@ aside
     width: 30%;
 }
 
+#hostings_a_flex
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside img
+{
+    align-self: flex-start;
+    width: 40%;
+    padding: 5px;
+    height: 130px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.hostings_a_blocs
+{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    height: 140px;
+    margin-top: 5%;
+}
 
 
+
+            /* ACTIVITIES */
+
+#activities
+{
+    display: flex;
+}
+
+.activities_single
+{
+    width: 20%;
+    height: auto;
+}
+
+.activities_single img
+{
+    width: 100%;
+    height: auto;
+}
 
 
 
