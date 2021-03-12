@@ -47,6 +47,7 @@ p
 a
 {
     text-decoration: none;
+    color: black;
 }
 
 figure
@@ -54,6 +55,9 @@ figure
     width: auto;
     height: auto;
     margin: 2%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
 }
 
                         /* HEADER */
@@ -65,6 +69,7 @@ header
     justify-content: space-between;
     justify-content: center;
     max-height: 70px;
+    margin-top: 2%;
 }
 
 header img
@@ -92,6 +97,9 @@ nav a:hover
 {
     color: var(--main_blue);
     border-top: var(--main_blue) 2px solid;
+    padding-top: 41px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 #menu_subscribe
@@ -162,7 +170,6 @@ input:focus, textarea:focus, select:focus
 
 #search_tb_button
 {
-    vertical-align: center;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
     height: 50px;   
@@ -173,6 +180,7 @@ input:focus, textarea:focus, select:focus
 {
     color: white;
     text-align: center;
+    font-size: medium;
 }
 
 .fa-info:before
@@ -201,53 +209,60 @@ input:focus, textarea:focus, select:focus
 
 #search_filters h2
 {
-width: 5%
+    width: 5%
 }
 
 #search_filters ul
 {
     width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 #search_filters li
 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width: auto;
     border: var(--gray) solid;
     border-left: none;
     border-radius: 0px 40px 40px 0px;
-    padding-right: 2%;
-    padding-left: 2%;
     padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: auto;
 }
 
 #search_filters a
 {
     width: auto;
-    padding-left: 20px;
     font-weight: bold;
     color: black;
     font-size: 20px;
     white-space: nowrap;
+    padding-left: 5px;
 }  
 
 .circle_full:before
 {
     color: var(--light_blue);
     font-size: 50px;
-    position: relative;
-    left: 30px;
+    position: absolute;
+    left: -34px;
+    top: -4px;
     z-index: 1;
 }
 
 .fa-money-bill-wave
 {
     color: var(--main_blue);
-    position: relative;
-    left: 67px;
-    top: 15px;
+    position: absolute;
+    left: -21px;
+    top: 11px;
     font-size: 20px;
     z-index: 2;
 }
@@ -255,9 +270,9 @@ width: 5%
 .fa-child
 {
     color: var(--main_blue);
-    position: relative;
-    left: 64px;
-    top: 13px;
+    position: absolute;
+    left: -19px;
+    top: 10px;
     font-size: 25px;
     z-index: 2; 
 }
@@ -265,9 +280,9 @@ width: 5%
 .fa-heart
 {
     color: var(--main_blue);
-    position: relative;
-    left: 67px;
-    top: 14px;
+    position: absolute;
+    left: -22px;
+    top: 11px;
     font-size: 25px;
     z-index: 2;   
 }
@@ -275,9 +290,9 @@ width: 5%
 .fa-dog
 {
     color: var(--main_blue);
-    position: relative;
-    left: 69px;
-    top: 11px;
+    position: absolute;
+    left: -23px;
+    top: 8px;
     font-size: 25px;
     z-index: 2; 
 } 
@@ -295,6 +310,8 @@ width: 5%
 {
     width: 67%;
     background-color: var(--gray);
+    border-radius: 20px;
+    height: 650px;
 }
 
 #hostings_m_flex
@@ -305,19 +322,23 @@ width: 5%
     flex-wrap: wrap;
 }
 
+#hostings img
+{
+    object-fit: cover;
+}
+
 #hostings_main img
 {
-    width: auto;
-    padding: 5px;
+    width: 96%;
+    padding: 2%;
     height: 130px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .hostings_m_blocs
 {
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    width: 28%;
+    width: 30%;
+    margin: 1%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -329,13 +350,7 @@ width: 5%
     padding-left: 7%;
 }
 
-#hostings_main a
-{
-    font-weight: bold;
-    color: black;
-}
-
-figcaption p, figcaption h2
+.hostings_m_blocs p, .hostings_m_blocs h2
 {
     margin-top: 2%;
     margin-bottom: 2%;
@@ -355,7 +370,34 @@ aside
 {
     margin-left: 3%;
     background-color: var(--gray);
-    width: 30%;
+    border-radius: 20px;
+    width: 33%;
+    height: 650px;
+}
+
+aside img
+{
+    align-self: flex-start;
+    width: 40%;
+    padding: 5px;
+    height: 95%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+aside figcaption
+{
+    padding-left: 10px;
+}
+
+aside figure
+{
+    display: flex;
+    height: 160px;
+}
+
+aside h2, aside p
+{
+    margin-bottom: 0;
 }
 
 #hostings_a_flex
@@ -365,24 +407,33 @@ aside
     align-items: center;
 }
 
-aside img
-{
-    align-self: flex-start;
-    width: 40%;
-    padding: 5px;
-    height: 130px;
-    border-radius: 20px 0px 0px 20px;
-}
-
 .hostings_a_blocs
 {
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    width: 80%;
+    width: 90%;
     display: flex;
-    justify-content: flex-start;
-    height: 140px;
-    margin-top: 5%;
+    margin-top: 1%;
+}
+
+.fa-chart-line
+{
+    padding-left: 150px;
+}
+
+.a_stars
+{
+    margin-top: 50px;
+}
+
+#hostings_main h1, #show_more, aside h1
+{
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+#show_more
+{
+    font-weight: bold;
+    color: black;
 }
 
 
@@ -417,7 +468,13 @@ footer
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    background-color: var(--gray);
+}
+
+footer div
+{
+    margin-right: auto;
 }
 
 footer ul
