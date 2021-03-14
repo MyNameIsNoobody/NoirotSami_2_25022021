@@ -16,8 +16,14 @@
 
 body
 {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: auto;
+    max-width: 1440px;
+}
+
+header, section
+{
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 ul
@@ -440,22 +446,97 @@ aside h2, aside p
 
             /* ACTIVITIES */
 
-#activities
+#activities_flex
 {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#activities h1
+{
+    margin-top: 5%;
+}
+
+#activities_flex img
+{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#activities_flex h2
+{
+    margin-top: 3%;
+    padding-left: 7%;
 }
 
 .activities_single
 {
-    width: 20%;
-    height: auto;
+    width: 24%;
+    height: 500px;
 }
 
 .activities_single img
 {
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 90%;
 }
+
+#activities_unequals
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24%;
+    height: 500px;
+}
+
+#pomegues
+{
+    height: 50%;
+    margin-top: 0;
+}
+
+#frioul
+{
+    height: 40%;
+    margin-bottom: 0;
+}
+
+#activities_unequals img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+}
+
+#activities_equals
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24%;
+    height: 500px;
+}
+
+#activities_equals img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+}
+
+.dame_parc
+{
+    height: 45%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
 
 
 
@@ -474,7 +555,8 @@ footer
 
 footer div
 {
-    margin-right: auto;
+    margin-right: 10%;
+    padding-left: 5%;
 }
 
 footer ul
