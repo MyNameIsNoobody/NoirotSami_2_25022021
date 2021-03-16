@@ -58,12 +58,15 @@ a
 
 figure
 {
-    width: auto;
-    height: auto;
     margin: 2%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 20px 20px 20px 20px;
+}
+
+img
+{
+    object-fit: cover;
 }
 
                         /* HEADER */
@@ -80,7 +83,7 @@ header
 
 header img
 {
-    max-height: 50px;
+    height: 50px;
 }
 
 header div
@@ -96,16 +99,20 @@ nav
 
 nav a
 {
+    padding-top: 44px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+#menu_activities
+{
     color: black;
 }
 
-nav a:hover
+#menu_hostings
 {
     color: var(--main_blue);
     border-top: var(--main_blue) 2px solid;
-    padding-top: 41px;
-    padding-right: 25px;
-    padding-left: 25px;
 }
 
 #menu_subscribe
@@ -116,14 +123,10 @@ nav a:hover
 
 nav ul
 {
-    display: flex;
     width: 100%;
-    justify-content: space-around;
     align-items: center;
     margin: 0;
 }
-
-                        /* BODY */
 
             /* SEARCH */
 
@@ -213,6 +216,11 @@ input:focus, textarea:focus, select:focus
     margin-top: 2%;
 }
 
+#search_filters li:hover
+{
+    background: linear-gradient(to right, var(--light_blue), var(--main_blue))
+}
+
 #search_filters h2
 {
     width: 5%
@@ -221,7 +229,6 @@ input:focus, textarea:focus, select:focus
 #search_filters ul
 {
     width: 70%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -258,8 +265,8 @@ input:focus, textarea:focus, select:focus
     color: var(--light_blue);
     font-size: 50px;
     position: absolute;
-    left: -34px;
-    top: -4px;
+    left: -33px;
+    top: -5px;
     z-index: 1;
 }
 
@@ -267,7 +274,7 @@ input:focus, textarea:focus, select:focus
 {
     color: var(--main_blue);
     position: absolute;
-    left: -21px;
+    left: -20px;
     top: 11px;
     font-size: 20px;
     z-index: 2;
@@ -277,8 +284,8 @@ input:focus, textarea:focus, select:focus
 {
     color: var(--main_blue);
     position: absolute;
-    left: -19px;
-    top: 10px;
+    left: -18px;
+    top: 8px;
     font-size: 25px;
     z-index: 2; 
 }
@@ -287,8 +294,8 @@ input:focus, textarea:focus, select:focus
 {
     color: var(--main_blue);
     position: absolute;
-    left: -22px;
-    top: 11px;
+    left: -21px;
+    top: 9px;
     font-size: 25px;
     z-index: 2;   
 }
@@ -297,8 +304,8 @@ input:focus, textarea:focus, select:focus
 {
     color: var(--main_blue);
     position: absolute;
-    left: -23px;
-    top: 8px;
+    left: -22px;
+    top: 6px;
     font-size: 25px;
     z-index: 2; 
 } 
@@ -326,11 +333,6 @@ input:focus, textarea:focus, select:focus
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-#hostings img
-{
-    object-fit: cover;
 }
 
 #hostings_main img
@@ -393,6 +395,8 @@ aside img
 aside figcaption
 {
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 aside figure
@@ -427,7 +431,7 @@ aside h2, aside p
 
 .a_stars
 {
-    margin-top: 50px;
+    margin-top: 35%;
 }
 
 #hostings_main h1, #show_more, aside h1
@@ -446,85 +450,87 @@ aside h2, aside p
 
             /* ACTIVITIES */
 
+#activities
+{
+    height: 550px;
+}
+
 #activities_flex
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    height: 95%;
 }
 
 #activities h1
 {
     margin-top: 5%;
+    margin-bottom: 0;
 }
 
-#activities_flex img
-{
-    border-radius: 20px 20px 0px 0px;
-}
-
-#activities_flex h2
+#activities h2
 {
     margin-top: 3%;
     padding-left: 7%;
 }
 
-.activities_single
+#activities figure
+{
+    height: 100%;
+}
+
+#activities img
+{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#activities figcaption
+{
+    height: 25px;
+}
+
+.activities_single, #activities_unequals, #activities_equals
 {
     width: 24%;
     height: 500px;
 }
 
-.activities_single img
-{
-    object-fit: cover;
-    width: 100%;
-    height: 90%;
-}
-
-#activities_unequals
+#activities_unequals, #activities_equals
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 24%;
-    height: 500px;
 }
 
 #pomegues
 {
-    height: 50%;
+    height: 55%;
     margin-top: 0;
+}
+
+#pomegues img
+{
+    height: 81%;
 }
 
 #frioul
 {
-    height: 40%;
+    height: 35%;
     margin-bottom: 0;
 }
 
-#activities_unequals img
+#frioul img
 {
-    object-fit: cover;
-    width: 100%;
-    height: 80%;
-}
-
-#activities_equals
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24%;
-    height: 500px;
+    height: 71%;
 }
 
 #activities_equals img
 {
-    object-fit: cover;
     width: 100%;
-    height: 80%;
+    height: 78%;
 }
 
 .dame_parc
@@ -535,14 +541,7 @@ aside h2, aside p
 }
 
 
-
-
-
-
-
-
-
-                        /* FOOTER */
+            /* FOOTER */
 
 footer
 {
@@ -551,6 +550,7 @@ footer
     align-items: center;
     justify-content: flex-start;
     background-color: var(--gray);
+    margin-top: 5%;
 }
 
 footer div
@@ -563,9 +563,4 @@ footer ul
 {
     flex-direction: column;
     align-items: start;
-}
-
-footer a
-{
-    color: black;
 }
