@@ -8,8 +8,8 @@
 
 :root
 {
-    --main_blue: #0065FC;
-    --light_blue: #DEEBFF;
+    --main-blue: #0065FC;
+    --light-blue: #DEEBFF;
     --gray: #F2F2F2;
     font-family: "Raleway";
 }
@@ -35,7 +35,7 @@ ul
 
 h1
 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bolder;
 }
 
@@ -75,14 +75,16 @@ img
     object-fit: cover;
 }
 
+
+
                         /* HEADER */
 
 header
 {
-    color: var(--main_blue);
+    color: var(--main-blue);
     display: flex;
     justify-content: space-between;
-    justify-content: center;
+    align-items: center;
     max-height: 70px;
     margin-top: 2%;
 }
@@ -94,20 +96,20 @@ header img
 
 header div
 {
-    width: 70%;
+    width: 60%;
 }
 
 nav
 {
     display: flex;
-    width: 30%;
+    width: auto;
 }
 
 nav a
 {
-    padding-top: 44px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 52px;
 }
 
 #menu_activities
@@ -117,22 +119,26 @@ nav a
 
 #menu_hostings
 {
-    color: var(--main_blue);
-    border-top: var(--main_blue) 2px solid;
+    color: var(--main-blue);
+    border-top: var(--main-blue) 2px solid;
 }
 
 #menu_subscribe
 {
-    color: var(--main_blue);
+    color: var(--main-blue);
     font-weight: bold;
+    padding: 40px;
 }
 
 nav ul
 {
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     margin: 0;
 }
+
+
 
             /* SEARCH */
 
@@ -204,7 +210,7 @@ input:focus, textarea:focus, select:focus
     font-size: 15px;
     position: relative;
     left: 10px;
-    color: var(--main_blue)
+    color: var(--main-blue)
 }
 
 .circle_empty:before
@@ -223,11 +229,6 @@ input:focus, textarea:focus, select:focus
     margin-top: 2%;
 }
 
-#search_filters li:hover
-{
-    background: linear-gradient(to right, var(--light_blue), var(--main_blue))
-}
-
 #search_filters h2
 {
     width: 5%
@@ -235,16 +236,14 @@ input:focus, textarea:focus, select:focus
 
 #search_filters ul
 {
-    width: 60%;
-    justify-content: center;
+    width: 900px;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 1%;
 }
 
 #search_filters li
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     width: auto;
     border: var(--gray) solid;
@@ -255,6 +254,11 @@ input:focus, textarea:focus, select:focus
     padding-left: 2%;
     padding-right: 2%;
     margin-left: 7%;
+}
+
+#search_filters li:hover
+{
+    background: linear-gradient(to right, var(--light-blue), var(--main-blue))
 }
 
 #search_filters a
@@ -269,7 +273,7 @@ input:focus, textarea:focus, select:focus
 
 .circle_full:before
 {
-    color: var(--light_blue);
+    color: var(--light-blue);
     font-size: 47px;
     position: absolute;
     left: -31px;
@@ -279,7 +283,7 @@ input:focus, textarea:focus, select:focus
 
 .fa-money-bill-wave
 {
-    color: var(--main_blue);
+    color: var(--main-blue);
     position: absolute;
     left: -18px;
     top: 11px;
@@ -289,7 +293,7 @@ input:focus, textarea:focus, select:focus
 
 .fa-child
 {
-    color: var(--main_blue);
+    color: var(--main-blue);
     position: absolute;
     left: -16px;
     top: 8px;
@@ -299,7 +303,7 @@ input:focus, textarea:focus, select:focus
 
 .fa-heart
 {
-    color: var(--main_blue);
+    color: var(--main-blue);
     position: absolute;
     left: -19px;
     top: 9px;
@@ -309,13 +313,14 @@ input:focus, textarea:focus, select:focus
 
 .fa-dog
 {
-    color: var(--main_blue);
+    color: var(--main-blue);
     position: absolute;
     left: -20px;
     top: 6px;
     font-size: 22px;
     z-index: 2; 
 } 
+
 
 
             /* HOSTINGS */
@@ -373,7 +378,7 @@ input:focus, textarea:focus, select:focus
 
 .blue_stars
 {
-    color: var(--main_blue);
+    color: var(--main-blue);
 }
 
 .gray_stars
@@ -388,6 +393,27 @@ aside
     border-radius: 20px;
     width: 33%;
     height: 650px;
+}
+
+#hostings_a_flex
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.hostings_a_blocs
+{
+    width: 90%;
+    display: flex;
+    margin-top: 1%;
+}
+
+aside figure
+{
+    display: flex;
+    height: 160px;
 }
 
 aside img
@@ -406,39 +432,24 @@ aside figcaption
     flex-direction: column;
 }
 
-aside figure
-{
-    display: flex;
-    height: 160px;
-}
-
 aside h3, aside p
 {
     margin-bottom: 0;
 }
 
-#hostings_a_flex
+figcaption h3 + p
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hostings_a_blocs
-{
-    width: 90%;
-    display: flex;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
 .fa-chart-line
 {
-    padding-left: 150px;
+    padding-left: 35%;
 }
 
 .a_stars
 {
-    margin-top: 35%;
+    margin-top: 40%;
 }
 
 #hostings_main h2, #show_more, aside h2
@@ -549,24 +560,24 @@ aside h3, aside p
 }
 
 
+
             /* FOOTER */
 
 footer
 {
     width: 100%;
-    height: 230px;
+    height: 200px;
     display: flex;
     align-content: center;
     justify-content: flex-start;
     background-color: var(--gray);
     margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 footer div
 {
     margin-right: 10%;
-    padding-left: 5%;
+    padding-left: 7%;
     margin-top: 2%;
 }
 
@@ -579,4 +590,63 @@ footer ul
 footer li
 {
     margin-bottom: 7%;
+}
+
+
+
+            /* Media Queries */
+
+@media all and (max-width: 1280px)
+{
+    nav a
+    {
+        padding: 40px;
+    }
+
+    #hostings
+    {
+        flex-direction: column-reverse;
+    }
+    
+    #hostings_main
+    {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    aside
+    {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 2%;
+        padding-bottom: 5%;
+    }
+
+    aside figure
+    {
+        margin: 4%;
+    }
+
+    aside figcaption
+    {
+        padding-left: 2%;
+    }
+
+    #hostings_a_flex
+    {
+        flex-direction: row;
+    }
+
+    #hostings_main h2, aside h2
+    {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    .fa-chart-line
+    {
+        padding-left: 5%;
+    }
 }
