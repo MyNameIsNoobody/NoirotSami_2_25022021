@@ -205,6 +205,11 @@ input:focus, textarea:focus, select:focus
     font-size: medium;
 }
 
+#search_tb_button_iphone
+{
+    visibility: hidden;
+}
+
 .fa-info:before
 {
     font-size: 15px;
@@ -596,7 +601,7 @@ footer li
 
             /* Media Queries */
 
-@media all and (max-width: 1280px)
+@media all and (max-width: 1200px)
 {
     #hostings
     {
@@ -646,10 +651,8 @@ footer li
     }
 }
 
-
-@media (max-width: 768px)
+@media (max-width: 1024px)
 {
-    
     header
     {
         flex-wrap: wrap;
@@ -675,7 +678,6 @@ footer li
 
     nav ul
     {
-        width: 100%;
         justify-content: center;
     }
 
@@ -695,7 +697,7 @@ footer li
     {
         border-bottom: var(--main-blue) 3px solid;
         padding-bottom: 10px;
-        margin-left: -20px;
+        margin-left: -40px;
     }
 
     #menu_hostings a
@@ -708,7 +710,7 @@ footer li
     {
         border-bottom: var(--gray) 3px solid;
         padding-bottom: 10px;
-        margin-right: -20px;
+        margin-right: -40px;
     }
 
     #search_toolbar
@@ -719,6 +721,16 @@ footer li
     h1 
     {
         margin-top: 50px;
+    }
+
+    #hostings_a_flex
+    {
+        flex-wrap: wrap;
+    }
+
+    .hostings_a_blocs
+    {
+        width: 50%;
     }
 
     #search_filters,  #search_filters ul
@@ -735,54 +747,16 @@ footer li
     #search_filters li 
     {
         margin: 10px 30px;
-    }
-
-    #search_toolbar
-    {
-        width: 100%;
-    }
-
-    aside
-    {
-        border-radius: 0;
-    }
-
-    aside h2
-    {
-        margin-top: 40px;
-    }
-
-    #hostings_a_flex
-    {
-        flex-direction: column;
-    }
-
-    aside figure 
-    {
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
-    #hostings
-    {
-        padding: 0;
-    }
-
+    }  
+    
     #hostings_main
     {
-        background-color: white;
         height: auto;
     }
-
-    #hostings_m_flex
-    {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
+    
     .hostings_m_blocs
     {
-        width: unset;
+        width: 45%;
     }
 
     #activities
@@ -798,41 +772,58 @@ footer li
 
     #activities_flex
     {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     #activities figure 
     {
         margin: 0;
+        height: 250px;
+    }
+
+    #activities a
+    {
+        height: auto;
     }
 
     #activities img 
     {
-        height: 80%;
+        height: 190px;
     }
 
-    #activities figure, .activities_single, #activities_equals, #activities_unequals
+    #activities h3 
     {
-        width: 100%;
+        margin-top: 17px
+    }
+
+    .activities_single, #activities_equals, #activities_unequals
+    {
+        width: 48%;
         height: auto;
         margin-bottom: 20px;
     }
 
-    #pomegues img
+    .dame_parc, #pomegues, #frioul
     {
-        height: 200px;
+        margin-top: 20px;
     }
+}
 
-    .fa-info:before
+@media (max-width: 640px)
+{
+    #hostings
     {
-        left: 12px;
-        top: 13px;
+        padding: 0;
     }
-
-    .circle_empty:before
+    
+    #hostings_a_flex
     {
-        left: 0;
-        top: -10px;
+        justify-content: center;
+    }
+    
+    .hostings_a_blocs
+    {
+        width: 90%;
     }
 
     footer
@@ -848,5 +839,129 @@ footer li
     {
         padding: 0;
         margin: 0;
+    }
+}
+
+@media (max-width: 425px)
+{
+
+    #menu_hostings
+    {
+        margin-left: -20px;
+    }
+
+    #menu_activities
+    {
+        margin-right: -20px;
+    }
+
+    #search_toolbar
+    {
+        width: 100%;
+    }
+
+    #search_tb_button
+    {
+        visibility: hidden;
+    }
+
+    #search_tb_icon
+    {
+        min-width: 50px;
+    }
+
+    form, input 
+    {
+        width: 200px;
+    }
+    
+    #search_tb_button_iphone
+    {
+        visibility: visible;
+        background-color: var(--main-blue);
+        border-radius: 10px;
+        color: white;
+        position: relative;
+        min-width: 50px;
+        font-size: 18px;
+        height: 50px;
+        right: 65px;
+    }
+
+    .fa-search
+    {
+        position: absolute;
+        left: 16px;
+        top: 15px;
+    }
+
+    aside
+    {
+        border-radius: 0;
+    }
+
+    aside h2
+    {
+        margin-top: 40px;
+    }
+
+    #hostings_a_flex
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    aside figure 
+    {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #hostings_main
+    {
+        background-color: white;
+    }
+
+    #hostings_main img 
+    {
+        height: 150px;
+    }
+
+    #hostings_m_flex
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .hostings_m_blocs
+    {
+        width: unset;
+    }
+
+    #activities_flex
+    {
+        flex-direction: column;
+    }
+
+    .activities_single, #activities_equals, #activities_unequals
+    {
+        width: 100%;
+    }
+
+    #pomegues, .dame_parc
+    {
+        margin-bottom: 20px;
+    }
+
+    .circle_empty:before
+    {
+        left: 0;
+        top: -10px;
+    }
+
+    .fa-info:before
+    {
+        left: 12px;
+        top: 13px;
     }
 }
