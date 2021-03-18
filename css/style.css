@@ -11,7 +11,7 @@
     --main-blue: #0065FC;
     --light-blue: #DEEBFF;
     --gray: #F2F2F2;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
 }
 
 body
@@ -935,7 +935,7 @@ footer li
 
     .hostings_m_blocs
     {
-        width: unset;
+        width: 90%;
     }
 
     #activities_flex
