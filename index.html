@@ -5,6 +5,7 @@
         <title>Reservia - Page d'accueil</title>
         <link rel="stylesheet" href="css/style.css" />
         <script src="https://kit.fontawesome.com/86f823ab3f.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width">
     </head>
 
     <body>
@@ -14,8 +15,8 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#hostings" id="menu_hostings">Hébergements</a></li>
-                    <li><a href="#activities" id="menu_activities">Activités</a></li>
+                    <li id="menu_hostings"><a href="#hostings">Hébergements</a></li>
+                    <li id="menu_activities"><a href="#activities">Activités</a></li>
                </ul>
             </nav>
             <a id="menu_subscribe" href="#">S'inscrire</a>
@@ -49,7 +50,7 @@
                 </ul>
             </div>
 
-            <p><i class="fas fa-info"></i><i class="far fa-circle circle_empty"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p id="info_flex"><span><i class="fas fa-info"></i><i class="far fa-circle circle_empty"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
         <section id="hostings">

@@ -85,7 +85,8 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 70px;
+    height: auto;
+    width: auto;
     margin-top: 28px;
 }
 
@@ -102,14 +103,12 @@ header div
 nav
 {
     display: flex;
-    width: auto;
 }
 
 nav a
 {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 52px;
 }
 
 #menu_activities
@@ -117,17 +116,18 @@ nav a
     color: black;
 }
 
-#menu_hostings
+#menu_hostings a
 {
     color: var(--main-blue);
-    border-top: var(--main-blue) 2px solid;
+    border-top: var(--main-blue) 3px solid;
+    padding-top: 42px;
 }
 
-#menu_subscribe
+#menu_subscribe a
 {
     color: var(--main-blue);
     font-weight: bold;
-    padding: 40px;
+    padding-top: 0;
 }
 
 nav ul
@@ -209,7 +209,8 @@ input:focus, textarea:focus, select:focus
 {
     font-size: 15px;
     position: relative;
-    left: 10px;
+    left: 12px;
+    top: -5px;
     color: var(--main-blue)
 }
 
@@ -217,8 +218,7 @@ input:focus, textarea:focus, select:focus
 {
     font-size: 30px;
     position: relative;
-    left: -8px;
-    top: 5px;
+    left: -5px;
     color: var(--gray)
 }
 
@@ -249,10 +249,7 @@ input:focus, textarea:focus, select:focus
     border: var(--gray) solid;
     border-left: none;
     border-radius: 0px 40px 40px 0px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 9px 18px;
     margin-left: 7%;
 }
 
@@ -321,7 +318,11 @@ input:focus, textarea:focus, select:focus
     z-index: 2; 
 } 
 
-
+#info_flex
+{
+    display: flex;
+    align-items: center;
+}
 
             /* HOSTINGS */
 
@@ -567,7 +568,7 @@ figcaption h3 + p
 footer
 {
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     align-content: center;
     justify-content: flex-start;
@@ -592,8 +593,6 @@ footer li
 {
     margin-bottom: 7%;
 }
-
-
 
             /* Media Queries */
 
@@ -647,8 +646,10 @@ footer li
     }
 }
 
-@media all and (max-width: 768px)
+
+@media (max-width: 768px)
 {
+    
     header
     {
         flex-wrap: wrap;
@@ -656,11 +657,196 @@ footer li
 
     header div
     {
-        width: 800px;
+        width: 40%;
+        order: 1;
     }
 
-    header a 
+    #menu_subscribe
     {
-        padding-left: 0;
+        order: 2;
+    }
+
+    nav
+    {
+        order: 3;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    nav ul
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav li 
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a 
+    {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    #menu_hostings
+    {
+        border-bottom: var(--main-blue) 3px solid;
+        padding-bottom: 10px;
+        margin-left: -20px;
+    }
+
+    #menu_hostings a
+    {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    #menu_activities
+    {
+        border-bottom: var(--gray) 3px solid;
+        padding-bottom: 10px;
+        margin-right: -20px;
+    }
+
+    #search_toolbar
+    {
+        margin-top: 30px;
+    }
+
+    h1 
+    {
+        margin-top: 50px;
+    }
+
+    #search_filters,  #search_filters ul
+    {
+        flex-wrap: wrap;
+    }
+
+    #search_filters h2
+    {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #search_filters li 
+    {
+        margin: 10px 30px;
+    }
+
+    #search_toolbar
+    {
+        width: 100%;
+    }
+
+    aside
+    {
+        border-radius: 0;
+    }
+
+    aside h2
+    {
+        margin-top: 40px;
+    }
+
+    #hostings_a_flex
+    {
+        flex-direction: column;
+    }
+
+    aside figure 
+    {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #hostings
+    {
+        padding: 0;
+    }
+
+    #hostings_main
+    {
+        background-color: white;
+        height: auto;
+    }
+
+    #hostings_m_flex
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .hostings_m_blocs
+    {
+        width: unset;
+    }
+
+    #activities
+    {
+        height: auto;
+    }
+
+    #activities h2
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #activities_flex
+    {
+        flex-direction: column;
+    }
+
+    #activities figure 
+    {
+        margin: 0;
+    }
+
+    #activities img 
+    {
+        height: 80%;
+    }
+
+    #activities figure, .activities_single, #activities_equals, #activities_unequals
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #pomegues img
+    {
+        height: 200px;
+    }
+
+    .fa-info:before
+    {
+        left: 12px;
+        top: 13px;
+    }
+
+    .circle_empty:before
+    {
+        left: 0;
+        top: -10px;
+    }
+
+    footer
+    {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 25px;
+        width: auto;
+        margin: 0;
+    }
+
+    footer div 
+    {
+        padding: 0;
+        margin: 0;
     }
 }
