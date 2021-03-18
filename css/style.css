@@ -123,7 +123,7 @@ nav a
     padding-top: 42px;
 }
 
-#menu_subscribe a
+#menu_subscribe
 {
     color: var(--main-blue);
     font-weight: bold;
