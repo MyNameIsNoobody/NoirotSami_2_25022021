@@ -8,9 +8,6 @@
 
 :root
 {
-    --main-blue: #0065FC;
-    --light-blue: #DEEBFF;
-    --gray: #F2F2F2;
     font-family: "Raleway", sans-serif;
 }
 
@@ -81,7 +78,7 @@ img
 
 header
 {
-    color: var(--main-blue);
+    color: #0065FC;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,14 +115,14 @@ nav a
 
 #menu_hostings a
 {
-    color: var(--main-blue);
-    border-top: var(--main-blue) 3px solid;
+    color: #0065FC;
+    border-top: #0065FC 3px solid;
     padding-top: 42px;
 }
 
 #menu_subscribe
 {
-    color: var(--main-blue);
+    color: #0065FC;
     font-weight: bold;
     padding-top: 0;
 }
@@ -151,7 +148,7 @@ nav ul
 #search_tb_icon
 {
     text-align: center;
-    background-color: var(--gray);
+    background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     height: 50px;   
     width: 50px;
@@ -170,7 +167,7 @@ input
     height: 46px;
     border-left: none;
     border-right: none;
-    border: solid 2px var(--gray);
+    border: solid 2px #F2F2F2;
     padding: 0;
     padding-left: 10%;
     margin: 0;
@@ -216,7 +213,7 @@ input:focus, textarea:focus, select:focus
     position: relative;
     left: 12px;
     top: -5px;
-    color: var(--main-blue)
+    color: #0065FC
 }
 
 .circle_empty:before
@@ -224,7 +221,7 @@ input:focus, textarea:focus, select:focus
     font-size: 30px;
     position: relative;
     left: -5px;
-    color: var(--gray)
+    color: #F2F2F2
 }
 
 #search_filters
@@ -251,7 +248,7 @@ input:focus, textarea:focus, select:focus
 {
     position: relative;
     width: auto;
-    border: var(--gray) solid;
+    border: #F2F2F2 solid;
     border-left: none;
     border-radius: 0px 40px 40px 0px;
     padding: 9px 18px;
@@ -260,7 +257,7 @@ input:focus, textarea:focus, select:focus
 
 #search_filters li:hover
 {
-    background: linear-gradient(to right, var(--light-blue), var(--main-blue))
+    background: linear-gradient(to right, #DEEBFF, #0065FC)
 }
 
 #search_filters a
@@ -275,7 +272,7 @@ input:focus, textarea:focus, select:focus
 
 .circle_full:before
 {
-    color: var(--light-blue);
+    color: #DEEBFF;
     font-size: 47px;
     position: absolute;
     left: -31px;
@@ -285,7 +282,7 @@ input:focus, textarea:focus, select:focus
 
 .fa-money-bill-wave
 {
-    color: var(--main-blue);
+    color: #0065FC;
     position: absolute;
     left: -18px;
     top: 11px;
@@ -295,7 +292,7 @@ input:focus, textarea:focus, select:focus
 
 .fa-child
 {
-    color: var(--main-blue);
+    color: #0065FC;
     position: absolute;
     left: -16px;
     top: 8px;
@@ -305,7 +302,7 @@ input:focus, textarea:focus, select:focus
 
 .fa-heart
 {
-    color: var(--main-blue);
+    color: #0065FC;
     position: absolute;
     left: -19px;
     top: 9px;
@@ -315,7 +312,7 @@ input:focus, textarea:focus, select:focus
 
 .fa-dog
 {
-    color: var(--main-blue);
+    color: #0065FC;
     position: absolute;
     left: -20px;
     top: 6px;
@@ -340,7 +337,7 @@ input:focus, textarea:focus, select:focus
 #hostings_main
 {
     width: 67%;
-    background-color: var(--gray);
+    background-color: #F2F2F2;
     border-radius: 20px;
     height: 650px;
 }
@@ -384,18 +381,18 @@ input:focus, textarea:focus, select:focus
 
 .blue_stars
 {
-    color: var(--main-blue);
+    color: #0065FC;
 }
 
 .gray_stars
 {
-   color: var(--gray) 
+   color: #F2F2F2 
 }
 
 aside
 {
     margin-left: 3%;
-    background-color: var(--gray);
+    background-color: #F2F2F2;
     border-radius: 20px;
     width: 33%;
     height: 650px;
@@ -577,7 +574,7 @@ footer
     display: flex;
     align-content: center;
     justify-content: flex-start;
-    background-color: var(--gray);
+    background-color: #F2F2F2;
     margin-top: 5%;
 }
 
@@ -695,7 +692,7 @@ footer li
 
     #menu_hostings
     {
-        border-bottom: var(--main-blue) 3px solid;
+        border-bottom: #0065FC 3px solid;
         padding-bottom: 10px;
         margin-left: -40px;
     }
@@ -708,7 +705,7 @@ footer li
 
     #menu_activities
     {
-        border-bottom: var(--gray) 3px solid;
+        border-bottom: #F2F2F2 3px solid;
         padding-bottom: 10px;
         margin-right: -40px;
     }
@@ -878,7 +875,7 @@ footer li
     #search_tb_button_iphone
     {
         visibility: visible;
-        background-color: var(--main-blue);
+        background-color: #0065FC;
         border-radius: 10px;
         color: white;
         position: relative;
